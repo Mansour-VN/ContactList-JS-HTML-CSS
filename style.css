@@ -1,0 +1,9 @@
+.btn-group .active {
+  background-color: white;
+  color: #000;
+}
+.table :where(th, td) {
+  white-space: nowrap;
+  vertical-align: middle;
+  padding: 0.2rem;
+}

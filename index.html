@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX 2</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@2.15.3/dist/full.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <div class="container mx-auto p-2 text-center">
+
+    <label for="my-modal" class="btn btn-primary ">ADD</label>
+    <label for="my-edit-modal" id="btn-edit" class="btn btn-accent ">EDIT</label>
+    <button class="btn btn-error  btn-delete">delete</button>
+
+  </div>
+  <div class="overflow-x-auto w-full  h-[520px]">
+    <table class="table w-full content-center">
+      <caption>This is Our Table</caption>
+      <thead>
+        <tr>
+          <th>
+            <label>
+              <input type="checkbox" class="checkbox check-all" />
+            </label>
+          </th>
+          <th>Name</th>
+          <th>family</th>
+          <th>birthday</th>
+          <th>mathGrade</th>
+          <th>socialStudiesGrade</th>
+          <th>persianGrade</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+      </tbody>
+    </table>
+  </div>
+  <div>
+
+
+    <div class="btn-group p-3">
+    </div>
+
+
+    <input type="checkbox" id="my-modal" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box">
+        <form class="form-add-user" action="" name="addingForm">
+          <h2>
+            Add New User
+          </h2>
+
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>Avatar</span>
+              <input name="avatar" type="text" placeholder="Avatar" class="input input-bordered" />
+            </label>
+          </div>
+
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>Full Name</span>
+              <input name="name" type="text" placeholder="Full Name" class="input input-bordered" />
+            </label>
+          </div>
+
+          <div class="form-control">
+
+            <label class="input-group input-group-vertical">
+              <span>Job</span>
+              <input name="family" type="text" placeholder="Enter Job" class="input input-bordered" />
+            </label>
+          </div>
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>birthday</span>
+              <input name="phone" type="text" placeholder="birthday" class="input input-bordered" />
+            </label>
+          </div>
+
+          <div class="form-control">
+            <button class="btn btn-accent">Add User</button>
+          </div>
+
+
+        </form>
+
+        <div class="modal-action">
+          <label for="my-modal" class="btn">Canecl!</label>
+        </div>
+      </div>
+    </div>
+
+
+    <input type="checkbox" id="my-edit-modal" class="modal-toggle" />
+    <div class="modal">
+      <div class="modal-box">
+        <h3 class="font-bold text-lg text-center p-3">Edit User</h3>
+        <form class="form-edit-user">
+
+
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>ID</span>
+              <input type="text" name="id" placeholder="ID" disabled class="input input-bordered " />
+            </label>
+          </div>
+
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Full Name" class="input input-bordered" />
+            </label>
+          </div>
+
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>family</span>
+              <input type="text" name="avatar" placeholder="family" class="input input-bordered" />
+            </label>
+          </div>
+
+          <div class="form-control">
+
+            <label class="input-group input-group-vertical">
+              <span>birthday</span>
+              <input type="text" name="birthday" placeholder="birthday" class="input input-bordered" />
+            </label>
+          </div>
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>mathGrade</span>
+              <input type="text" name="mathGrade" placeholder="mathGrade" class="input input-bordered" />
+            </label>
+          </div>
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>socialStudiesGrade</span>
+              <input type="text" name="socialStudiesGrade" placeholder="socialStudiesGrade" class="input input-bordered" />
+            </label>
+          </div>
+          <div class="form-control mb-3">
+
+            <label class="input-group input-group-vertical">
+              <span>persianGrade</span>
+              <input type="text" name="persianGrade" placeholder="persianGrade" class="input input-bordered" />
+            </label>
+          </div>
+
+          <div>
+
+            <div class="form-control flex ">
+              <input type="submit" class="btn btn-accent" value="Edit User" />
+
+            </div>
+            <div class="modal-action">
+              <a href="#" class="btn">Cancel!</a>
+            </div>
+          </div>
+
+        </form>
+
+      </div>
+    </div>
+
+
+
+    <div class="btn-group">
+
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
